@@ -1,1 +1,1 @@
-SELECT * from animals WHERE name = 'Luna';
+SELECT * from animals WHERE name LIKE '%mon';
