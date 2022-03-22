@@ -20,3 +20,11 @@ UPDATE animals SET species='digimon' WHERE name LIKE '%mon';
 UPDATE animals SET species='pokemon' WHERE species IS NULL;
 COMMIT;
 SELECT * FROM animals;
+
+-- Hold breathe 😤 transaction
+BEGIN;
+DELETE FROM animals;
+SELECT * FROM animals;
+ROLLBACK;
+COMMIT;
+SELECT * FROM animals;
