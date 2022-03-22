@@ -28,3 +28,15 @@ SELECT * FROM animals;
 ROLLBACK;
 COMMIT;
 SELECT * FROM animals;
+
+-- Fourth Transaction: Change all negative weight to positive
+BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+SELECT * FROM animals;
+SAVEPOINT del_less_than_a_year;
+UPDATE animals SET weight_kg = (weight_kg * -1);
+ROLLBACK TO del_less_than_a_year;
+SELECT * FROM animals;
+UPDATE animals SET weight_kg = (weight_kg * -1) WHERE weight_kg <= -1; -- Changes - to +
+COMMIT;
+SELECT * FROM animals;
