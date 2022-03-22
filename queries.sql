@@ -45,3 +45,5 @@ SELECT * FROM animals;
 SELECT COUNT(*) FROM animals;
 SELECT COUNT(*) FROM animals WHERE escape_attempts < 0;
 SELECT ROUND(AVG(weight_kg)::numeric, 2) FROM animals; --Round to 2 decimal places
+-- Prints name, species and highest escape attempts from data
+SELECT name, species, escape_attempts FROM animals WHERE escape_attempts = (SELECT MAX(escape_attempts) FROM animals);
