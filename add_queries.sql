@@ -1,2 +1,3 @@
-SELECT * FROM animals WHERE neutered = true AND escape_attempts < 3
-SELECT * FROM animals;
+SELECT date_of_birth, name FROM animals WHERE name = 'Agumon' OR name = 'Pikachu';
+-- SELECT * FROM animals;
+-- SELECT count(*) AS exact_count FROM animals;
