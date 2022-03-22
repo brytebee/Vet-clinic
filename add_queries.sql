@@ -1,3 +1,3 @@
-SELECT date_of_birth, name FROM animals WHERE name = 'Agumon' OR name = 'Pikachu';
+SELECT name, escape_attempts FROM animals WHERE weight_kg > 10.5;
 -- SELECT * FROM animals;
 -- SELECT count(*) AS exact_count FROM animals;
