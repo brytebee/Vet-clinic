@@ -9,4 +9,4 @@ CREATE TABLE animals (
 );
 
 -- Modify/Alter/Update Table
-ALTER TABLE animals ADD COLUMN species TYPE VARCHAR(150);
+ALTER TABLE animals ADD COLUMN species varchar(150);
