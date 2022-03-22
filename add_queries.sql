@@ -1,4 +1,3 @@
--Round to 2 decimal places
 Prints name and highest escape attempts from data
 SELECT name, escape_attempts FROM animals WHERE escape_attempts = (SELECT MAX(escape_attempts) FROM animals);
 SELECT species, MIN(weight_kg) min_weight, MAX(weight_kg) max_weight FROM animals GROUP BY species;

@@ -44,3 +44,4 @@ SELECT * FROM animals;
 -- Answers
 SELECT COUNT(*) FROM animals;
 SELECT COUNT(*) FROM animals WHERE escape_attempts < 0;
+SELECT ROUND(AVG(weight_kg)::numeric, 2) FROM animals; --Round to 2 decimal places
