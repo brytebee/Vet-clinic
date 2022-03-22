@@ -40,3 +40,6 @@ SELECT * FROM animals;
 UPDATE animals SET weight_kg = (weight_kg * -1) WHERE weight_kg <= -1; -- Changes - to +
 COMMIT;
 SELECT * FROM animals;
+
+-- Answers
+SELECT COUNT(*) FROM animals;
