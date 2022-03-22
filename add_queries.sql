@@ -1,2 +1,2 @@
--- SELECT species, MIN(weight_kg) min_weight, MAX(weight_kg) max_weight FROM animals GROUP BY species;
+
 -- SELECT species,  ROUND(AVG(escape_attempts)::NUMERIC, 0) Esc_try FROM animals GROUP BY species; --approx to whole number
