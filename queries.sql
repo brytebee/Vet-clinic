@@ -48,3 +48,4 @@ SELECT ROUND(AVG(weight_kg)::numeric, 2) FROM animals; --Round to 2 decimal plac
 -- Prints name, species and highest escape attempts from data
 SELECT name, species, escape_attempts FROM animals WHERE escape_attempts = (SELECT MAX(escape_attempts) FROM animals);
 SELECT species, MIN(weight_kg) min_weight, MAX(weight_kg) max_weight FROM animals GROUP BY species;
+SELECT species,  ROUND(AVG(escape_attempts)::NUMERIC, 0) Esc_try FROM animals WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31' GROUP BY species; --approx to whole number
