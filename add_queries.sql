@@ -8,3 +8,5 @@ CREATE TABLE species (
   id              SERIAL PRIMARY KEY,
   species      VARCHAR(20) NOT NULL
 );
+
+ALTER TABLE animals DROP COLUMN species;
