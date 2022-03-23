@@ -27,3 +27,6 @@ CREATE TABLE species (
 ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id);
 ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
+
+-- Change the column species as wrongly entered to name
+ALTER TABLE species RENAME COLUMN species TO name;
