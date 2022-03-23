@@ -59,5 +59,7 @@ SELECT Animal, Species FROM (SELECT animals.name AS Animal, species.name as Spec
 SELECT name, full_name FROM animals FULL OUTER JOIN owners ON animals.owners_id = owners.id;
 -- Animals per species
 SELECT species, COUNT(species) FROM (SELECT animals.name AS Animal, species.name AS Species FROM animals INNER JOIN species ON animals.species_id = species.id)_ GROUP BY species;
--- Digimon owned by Jenife
+-- Digimon owned by Jennifer Orwell
 SELECT full_name, name FROM (SELECT name, full_name FROM animals, owners WHERE animals.owner_id = owners.id) _ WHERE full_name = 'Jennifer Orwell' AND name LIKE '%mon';
+-- All animals owned by Dean Winchester that haven't tried to escape
+SELECT full_name, name, escape_attempts FROM(SELECT full_name, name, escape_attempts FROM animals INNER JOIN owners ON animals.owner_id = owners.id) t WHERE full_name = 'Dean Winchester' AND escape_attempts < 0;
