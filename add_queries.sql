@@ -1,1 +1,0 @@
-ALTER TABLE species RENAME COLUMN species TO name;
