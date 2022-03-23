@@ -51,8 +51,7 @@ SELECT species, MIN(weight_kg) min_weight, MAX(weight_kg) max_weight FROM animal
 SELECT species,  ROUND(AVG(escape_attempts)::NUMERIC, 0) Esc_try FROM animals WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31' GROUP BY species; --approx to whole number
 
 -- Queries for 3rd milestone
-SELECT full_name, name
-FROM (
-  SELECT name, full_name FROM animals JOIN owners WHERE animals.owner_id = owners.id
-) _
-WHERE full_name = 'Melody Pond';
+-- Animals that belong to to  Melody Pond
+SELECT full_name, name FROM (SELECT name, full_name FROM animals, owners WHERE animals.owner_id = owners.id) _ WHERE full_name = 'Melody Pond';
+-- List of all animals that are pokemon
+SELECT Animal, Species FROM (SELECT animals.name AS Animal, species.name as Species FROM animals, species WHERE animals.species_id = species.id) _ WHERE Species = 'Pokemon';
