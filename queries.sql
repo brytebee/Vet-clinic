@@ -55,3 +55,5 @@ SELECT species,  ROUND(AVG(escape_attempts)::NUMERIC, 0) Esc_try FROM animals WH
 SELECT full_name, name FROM (SELECT name, full_name FROM animals, owners WHERE animals.owner_id = owners.id) _ WHERE full_name = 'Melody Pond';
 -- List of all animals that are pokemon
 SELECT Animal, Species FROM (SELECT animals.name AS Animal, species.name as Species FROM animals, species WHERE animals.species_id = species.id) _ WHERE Species = 'Pokemon';
+-- List all owners and their animals, including those that don't own any animal.
+SELECT name, full_name FROM animals FULL OUTER JOIN owners ON animals.owners_id = owners.id;
