@@ -10,3 +10,4 @@ CREATE TABLE species (
 );
 
 ALTER TABLE animals DROP COLUMN species;
+ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id);
