@@ -46,3 +46,6 @@ CREATE TABLE specializations (
 	FOREIGN KEY (species_id) REFERENCES species (id) ON DELETE RESTRICT ON UPDATE CASCADE,
 	PRIMARY KEY (vets_id, species_id)
 );
+
+CREATE TABLE visits (
+);
