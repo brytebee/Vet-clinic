@@ -51,4 +51,8 @@ VALUES (1, 1),
 
 --Populate visits table
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
-VALUES (1, 1, '2020-05-24')
+VALUES (1, 1, '2020-05-24'),
+(1, 3, '2020-07-22'),
+(2, 4, '2021-02-02'),
+(3, 2, '2020-01-05'),
+(3, 2, '2020-03-08')
