@@ -37,4 +37,5 @@ UPDATE animals SET owner_id = 5 WHERE name IN ('Angemon', 'Boarmon');
 
 -- Populate vets table
 INSERT INTO vets(name, age, date_of_graduation)
-VALUES ('William Tatcher', 45, '2000-04-23')
+VALUES ('William Tatcher', 45, '2000-04-23'),
+('Maisy Smith', 26, '2019-01-17')
