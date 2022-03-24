@@ -48,4 +48,5 @@ CREATE TABLE specializations (
 );
 
 CREATE TABLE visits (
+	animals_id             INT NOT NULL
 );
