@@ -65,3 +65,6 @@ SELECT full_name, name FROM (SELECT name, full_name FROM animals, owners WHERE a
 SELECT full_name, name, escape_attempts FROM(SELECT full_name, name, escape_attempts FROM animals INNER JOIN owners ON animals.owner_id = owners.id) t WHERE full_name = 'Dean Winchester' AND escape_attempts < 0;
 -- Who owns the most animals?
 SELECT full_name, COUNT(name) FROM animals, owners WHERE animals.owner_id = owners.id GROUP BY full_name ORDER BY count DESC limit 1;
+
+-- Queries for 4th Milestone
+SELECT vets.name, date_of_visit, animals.name FROM animals JOIN visits ON visits.animals_id = animals.id JOIN vets ON visits.vets_id = vets.id WHERE vets.name = 'William Tatcher' ORDER BY date_of_visit DESC LIMIT 1;
