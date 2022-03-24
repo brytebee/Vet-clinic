@@ -73,3 +73,4 @@ SELECT vets.name AS vet_name, sp.name AS sp_name FROM vets FULL JOIN specializat
 SELECT vt.name AS vet_name, a.name AS ani_name, date_of_visit FROM visits v JOIN animals a ON v.animals_id = a.id JOIN vets vt ON v.vets_id = vt.id WHERE vt.name = 'Stephanie Mendez' AND date_of_visit BETWEEN '2020-04-01' AND '2020-08-30'
 SELECT name, COUNT(date_of_birth) FROM animals a JOIN visits v ON a.id = v.animals_id GROUP BY a.name ORDER BY count DESC LIMIT 1;
 SELECT a.name, vt.name, date_of_visit FROM visits v JOIN vets vt ON v.vets_id = vt.id JOIN animals a ON v.animals_id = a.id WHERE vt.name = 'Maisy Smith' ORDER BY date_of_visit LIMIT 1;
+SELECT a.name AS ani_name, vt.name AS vet_name, date_of_visit FROM visits v JOIN animals a ON v.animals_id = a.id JOIN vets vt ON v.vets_id = vt.id ORDER BY date_of_visit DESC LIMIT 1;
