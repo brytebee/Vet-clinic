@@ -48,3 +48,7 @@ VALUES (1, 1),
 (3, 2),
 (3, 1),
 (4, 2);
+
+--Populate visits table
+INSERT INTO visits (animals_id, vets_id, date_of_visit)
+VALUES (1, 1, '2020-05-24')
