@@ -48,5 +48,6 @@ CREATE TABLE specializations (
 );
 
 CREATE TABLE visits (
-	animals_id             INT NOT NULL
+	animals_id             INT NOT NULL,
+	vets_id                INT NOT NULL
 );
