@@ -30,11 +30,3 @@ ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
 
 -- Change the column species as wrongly entered to name
 ALTER TABLE species RENAME COLUMN species TO name;
-
--- Visits
-CREATE TABLE vets (
-    id          SERIAL PRIMARY KEY,
-    name        VARCHAR(20) NOT NULL,
-    age         INT NOT NULL,
-    date_of_graduation DATE
-);
