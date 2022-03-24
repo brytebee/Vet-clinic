@@ -69,3 +69,4 @@ SELECT full_name, COUNT(name) FROM animals, owners WHERE animals.owner_id = owne
 -- Queries for 4th Milestone
 SELECT vets.name, date_of_visit, animals.name FROM animals JOIN visits ON visits.animals_id = animals.id JOIN vets ON visits.vets_id = vets.id WHERE vets.name = 'William Tatcher' ORDER BY date_of_visit DESC LIMIT 1;
 SELECT species.name FROM specializations s JOIN vets ON s.vets_id = vets.id JOIN visits ON visits.vets_id = vets.id JOIN species ON s.species_id = species.id WHERE vets.name = 'Stephanie Mendez' GROUP BY species.name
+SELECT vets.name AS vet_name, sp.name AS sp_name FROM vets FULL JOIN specializations s ON s.vets_id = vets.id LEFT JOIN species sp ON s.species_id = sp.id
