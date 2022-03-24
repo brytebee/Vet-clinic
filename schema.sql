@@ -60,6 +60,7 @@ CREATE TABLE visits (
 DROP TABLE visits;
 
 CREATE TABLE visits (
+  id                     SERIAL PRIMARY KEY,
 	animals_id             INT NOT NULL,
 	vets_id                INT NOT NULL,
   date_of_visit          DATE NOT NULL,
