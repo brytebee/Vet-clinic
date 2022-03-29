@@ -65,3 +65,7 @@ REFERENCES treatments(id)
 ON DELETE RESTRICT ON UPDATE CASCADE,
 PRIMARY KEY (id)
 );
+
+CREATE INDEX patient_id_asc 
+  ON medical_histories
+  (patient_id ASC);
