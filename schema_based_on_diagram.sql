@@ -81,3 +81,7 @@ CREATE INDEX invoice_id_asc
 CREATE INDEX treatment_id_asc 
   ON invoice_items
   (treatment_id ASC);
+
+CREATE INDEX medical_history_id_asc 
+  ON treatments_histories
+  ( medical_history_id ASC);
