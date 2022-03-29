@@ -85,3 +85,7 @@ CREATE INDEX treatment_id_asc
 CREATE INDEX medical_history_id_asc 
   ON treatments_histories
   ( medical_history_id ASC);
+
+CREATE INDEX treatment_id_asc 
+  ON treatments_histories
+  (treatment_id ASC); 
