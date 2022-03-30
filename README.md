@@ -3,8 +3,9 @@
 In this project, I have used a relational database to create the data structure for a vet clinic. I added animals, animals' owners, clinic employees, and visits Tables.
 
 ## Schema Diagram
+![image](https://user-images.githubusercontent.com/27709832/160799747-34261014-1815-498c-8cf9-b4109b7cc7d2.png)
 
-<iframe width="100%" height="500px" style="box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); border-radius:15px;" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Embedded DrawSQL IFrame" frameborder="0" src="https://drawsql.app/greencodedev/diagrams/vet-clinic/embed"></iframe>
+![schema diagram](https://user-images.githubusercontent.com/27709832/160799466-354e3fac-5468-48da-abe6-e95523901043.gif)
 
 ## Built With
 
