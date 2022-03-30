@@ -2,6 +2,10 @@
 
 In this project, I have used a relational database to create the data structure for a vet clinic. I added animals, animals' owners, clinic employees, and visits Tables.
 
+## Schema Diagram
+
+<iframe width="100%" height="500px" style="box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); border-radius:15px;" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Embedded DrawSQL IFrame" frameborder="0" src="https://drawsql.app/greencodedev/diagrams/vet-clinic/embed"></iframe>
+
 ## Built With
 
 - SQL (PostgreSQLdoc)
